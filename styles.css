@@ -1,0 +1,39 @@
+body {
+    background-color: gray;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+button {
+    font-size: 2vw;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.calculator-box {
+    grid-column-start: span 5;
+    border: 1px solid black;
+    margin: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.larger-button {
+    grid-column-start: span 2;
+}
+
